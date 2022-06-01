@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import TaskList from './components/TaskList';
+import teamLogo from './imagenes/logo.jpg'
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="to-do-list">
+      <nav className='navbar'>
+        <img src={teamLogo}/>
+      </nav>
+      <section className='main-task'>
+        <h2>TopGunLab To Do List</h2>
+        <TaskList/>
+        
+      </section>
+      
+      
     </div>
   );
 }
