@@ -29,7 +29,7 @@ export default function TaskForm(props) {
         <input
         className="task-input"
         type='text'
-        placeholder="write a task"
+        placeholder="Write a task"
         name= 'texto'
         onChange={manejarCambio}
         />
